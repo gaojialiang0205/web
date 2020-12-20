@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abababa</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .all{
+            position: relative;
+            height: 1500px;
+            width: 1150px;
+            bottom: 1000px;
+        }
+        .top{
+            background-color: bisque;
+            height: 1800px;
+            width: 1300px;
+            position: relative;
+            top: 30px;
+            left: 225px;
+        }
+        .top1{
+            background-color: rgb(180, 236, 243);
+            height: 100px;
+            width: 1300px;
+        }
+        .back{
+            width: 1750px;
+            height: 1000px;
+            position: relative;
+        }
+        
+        .pt2{
+            -moz-border-radius:15px;
+            -webkit-border-radius:15px;
+            background-color:rgb(255, 255, 255);
+            width: 460px;
+            height: 500px;
+            position: relative;
+            left: 820px;
+            bottom: 480px;
+        }
+        .top2{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-color: gold;
+            width: 460px;
+            height: 40px;
+        }
+        .zhushi2{
+            color: black;
+            font-weight: bolder;
+            position: relative;
+            left: 380px;
+            top: 10px;
+        }
+        .play1{
+            width: 150px;
+            height: 140px;
+            position: relative;
+        }
+        .play2{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            left: 154px;
+            bottom: 140px;
+        }
+        .play3{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            left: 308px;
+            bottom: 280px;
+        }
+        .play4{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            bottom: 260px;
+        }
+        .play5{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            left: 154px;
+            bottom: 400px;
+        }
+        .play6{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            left: 308px;
+            bottom: 540px;
+        }
+        .play7{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            bottom: 520px;
+        }
+        .play8{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            left: 154px;
+            bottom: 660px;
+        }
+        .play9{
+            width: 150px;
+            height: 140px;
+            position: relative;
+            left: 308px;
+            bottom: 800px;
+        }
+        .play{
+            width: 100px;
+            height: 100px;
+            -moz-border-radius:15px;
+            -webkit-border-radius:15px;
+            position: relative;
+            left: 25px;
+            top: 15px;
+        }
+        .playzhushi6{
+            color: black;
+            position: relative;
+            top: 10px;
+            left: 27px;
+        }
+        .playzhushi5{
+            color: black;
+            position: relative;
+            top: 10px;
+            left: 35px;
+        }
+        .playzhushi4{
+            color: black;
+            position: relative;
+            top: 10px;
+            left: 44px;
+        }
+        .playzhushi3{
+            color: black;
+            position: relative;
+            top: 10px;
+            left: 50px;
+        }
+        .playzhushi2{
+            color: black;
+            position: relative;
+            top: 10px;
+            left: 60px;
+        }
+        .up {
+			display: none;
+            width: 100px;
+            height: 110px; 
+			position: fixed;
+            right: 10px; 
+            bottom: 20px;
+		}
+        .fanhui{
+            width: 100px;
+            height: 100px;
+        }
+        .logo{
+            height: 100px;
+            width: 200px;
+            position: relative;
+        }
+        .logo1{
+            height: 100px;
+            width: 300px;
+            position: relative;
+            left: 200px;
+            bottom: 209px;
+        }
+        .logo2{
+            height: 100px;
+            width: 280px;
+            position: relative;
+            left: 195px;
+            bottom: 209px;
+        }
+        .logo3{
+            height: 100px;
+            width: 210px;
+            position: relative;
+            left: 190px;
+            bottom: 209px;
+        }
+        .zhushi1{
+            color: darkgray;
+            position: relative;
+           left: 150px;
+           bottom: 70px;
+        }
+        .topinp{
+            border: 2px solid #000000;
+            background-color: rgb(133, 133, 133);
+            -moz-border-radius:10px;
+            -webkit-border-radius:10px;
+            height: 100px;
+            width: 300px;
+            position: relative;
+            left: 993px;
+            bottom: 105px;
+        }
+        .denglu{
+           position: relative;
+           left: 20px;
+           bottom: 50px;
+        }
+        .zhuce{
+            position: relative;
+            right: 20px;
+            bottom: 10px;
+            }
+        .touxiang{
+            width: 90px;
+            height: 90px;
+            position: relative;
+            left: 10px;
+            top: 5px;
+        }
+        .pingjiabox{
+            background-color: rgb(255, 255, 255);
+            width: 605px;
+            height: 335px;
+            border: black;
+            border-style: outset;
+            border-width: 1px;
+            position: relative;
+            left: 15px;
+            bottom: 460px;
+        }
+        .pingjia{
+            width: 600px;
+            height: 300px;
+            text-align: left;
+        }
+        .star{
+            width: 30px;
+            height: 30px;
+        }
+        .pingjiabtn{
+            width: 80px;
+            height: 30px;
+            position: relative;
+            left: 525px;
+            bottom: 33px;
+        }
+        .pt1{
+            width: 800px;
+            height: 500px;
+            background-color: rgb(233, 166, 67);
+            position: relative;
+            top: 20px;
+            left: 15px;
+        }
+        .game1{
+            display: block;
+            width: 800px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+        }
+        .game2{
+            display: none;
+            background-color: rgb(192, 62, 62);
+            width: 800px;
+            height: 500px;
+            position: relative;
+        }
+        .daojishi{
+            width: 800px;
+            height: 500px;
+        }
+        .beijing{
+            width: 800px;
+            height: 500px;
+        }
+        .kaishibtn{
+            width: 250px;
+            height: 100px;
+            -moz-border-radius:15px;
+            -webkit-border-radius:15px;
+            position: relative;
+            left: 280px;
+            bottom: 150px;
+        }
+        .denglubox{
+            display: none;
+            width: 500px;
+            height: 400px;
+            background-color: #fff;
+            position: relative;
+            left: 350px;
+            bottom: 1300px;
+            -moz-border-radius:15px;
+            -webkit-border-radius:15px;
+            border-style: outset;
+        }
+        .zhucebox{
+            display: none;
+            width: 500px;
+            height: 400px;
+            background-color: #fff;
+            position: relative;
+            left: 350px;
+            bottom: 1300px;
+            -moz-border-radius:15px;
+            -webkit-border-radius:15px;
+            border-style: outset;
+        }
+        .top11{
+            width: 500px;
+            height: 30px;
+            background-color: rgb(122, 122, 122);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .guanbibox{
+            width: 28px;
+            height: 28px;
+            -moz-border-radius:15px;
+            -webkit-border-radius:15px;
+            position: relative;
+            left: 472px;
+        }
+        .name1{
+            background-color: paleturquoise;
+            width: 250px;
+            height: 60px;
+            position: relative;
+            left: 125px;
+            top: 100px;
+        }
+        .arr2{
+            position: relative;
+            left: 125px;
+            top: 200px;
+        }
+        .dengluchenggong{
+            display: none;
+            background-color: rgb(155, 149, 233);
+            height: 100px;
+            width: 200px;
+            position: relative;
+            left: 150px;
+        }
+        .zhucechenggong{
+            display: none;
+            background-color: rgb(155, 149, 233);
+            height: 100px;
+            width: 200px;
+            position: relative;
+            left: 150px;
+        }
+        .chick3{
+            width: 60px;
+            position: relative;
+            left: 70px;
+            top: 40px;
+        }
+        .chick4{
+            width: 60px;
+            position: relative;
+            left: 70px;
+            top: 0px;
+        }
+        .pinglunqu{
+            background-color: bisque;
+            width: 1300px;
+            height: 900px;
+            position: relative;
+            bottom: 450px;
+        }
+        .geti{
+            background-color: #fff;
+            border-style: outset;
+            height: 150px;
+        }
+        .yonghuqu{
+            height: 150px;
+            width: 120px;
+        }
+        .yonghutouxiang{
+            height: 120px;
+            width: 120px;
+        }
+        .dafenqu{
+            position: relative;
+            left: 120px;
+            bottom: 150px;
+        }
+        .pinglunneirong{
+            width: 1170px;
+            height: 120px;
+            position: relative;
+            left: 120px;
+            bottom: 150px;
+            border: black;
+            border-width: 1px;
+            border-style: double;
+        }
+    </style>
+</head>
+<body>
+    <img src="login/背景.jpg" class="back">
+    <div class="all">
+        <form>
+            <div class="top">
+                <div class="top1">
+                    <img src="login/logo1.png" class="logo">
+                    <div class="topinp">
+                        <img src="login/头像.png" class="touxiang">
+                        <a  class="denglu" id="denglu">登录</a>
+                        <a  class="zhuce" id="zhuce">立即注册</a>
+                        <p class="zhushi1">没有账号？</p>
+                    </div>
+                    <img src="login/logo2.png" class="logo1">
+                    <img src="login/logo2.png" class="logo2">
+                    <img src="login/logo2.png" class="logo3">
+                </div>
+                <div class="pt1">
+                    <div class="game1" id="game1">
+                        <img src="login/beijing.png" alt="" class="beijing">
+                        <img src="login/开始.png" alt="" class="kaishibtn" id="kaishibtn">
+                    </div>
+                    <div class="game2" id="game2">
+                        <img src="login/3.png" alt="" class="daojishi" id="dao">
+                    </div>
+                </div>
+                <div class="pt2">
+                    <div class="top2">
+                        <p class="zhushi2">精品游戏</p>
+                    </div>
+                    <div class="play1">
+                        <img src="login/play1.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi6">小鳄鱼爱洗澡</a>
+                    </div>
+                    <div class="play2" >
+                        <img src="login/play2.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi3">猫里奥</a>
+                    </div>
+                    <div class="play3">
+                        <img src="login/play3.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi6">植物大战僵尸</a>
+                    </div>
+                    <div class="play4">
+                        <img src="login/play4.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi2">鬼泣</a>
+                    </div>
+                    <div class="play5">
+                        <img src="login/play5.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi4">炮打笑脸</a>
+                    </div>
+                    <div class="play6">
+                        <img src="login/play6.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi4">守望先锋</a>
+                    </div>
+                    <div class="play7">
+                        <img src="login/play7.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi5">森林冰火人</a>
+                    </div>
+                    <div class="play8">
+                        <img src="login/play8.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi4">雪人兄弟</a>
+                    </div>
+                    <div class="play9">
+                        <img src="login/play9.png" class="play">
+                        <p></p>
+                        <a href="URL" class="playzhushi3">小蜜蜂</a>
+                    </div>
+                </div>
+                <div class="pingjiabox">
+                    <input type="text" class="pingjia" id="pingjia">
+                    <div id="pic">
+                        <img src="login/star0.png" class="star" title="1" name="0"/>
+                        <img src="login/star0.png" class="star" title="2" name="1"/>
+                        <img src="login/star0.png" class="star" title="3" name="2"/>
+                        <img src="login/star0.png" class="star" title="4" name="3"/>
+                        <img src="login/star0.png" class="star" title="5" name="4"/>
+                    </div>
+                    <input type="button" class="pingjiabtn" value="发表评论" id="pingjiabtn">
+                </div>
+                <div class="denglubox" id="denglujiemian">
+                    <div>
+                        <div class="top11">
+                            <img src="login/关闭.png" alt="" class="guanbibox" id="dengluguanbi">
+                        </div>
+                        <div class="name1">
+                            <p class="name">用&nbsp;户&nbsp;名&nbsp;&nbsp;&nbsp;<input type="text" id="userName" value="" class="arr1"></p>
+                            <p id="notes1" class="notes">&nbsp;</p>
+                            <p calss="space1">&nbsp;</p>
+                        </div>
+                        <div class="name1">
+                            <p class="name">&nbsp;&nbsp;&nbsp;密码&nbsp;&nbsp;&nbsp;<input type="text" id="passWord" value="" class="arr1"></p>
+                            <p id="notes2" class="notes">&nbsp;</p>
+                            <p class="space2">&nbsp;</p>
+                        </div>
+                        <div>
+                            <input type="button" id="denglu1" value="立即登录" class="arr2">
+                        </div>
+                        <div class="dengluchenggong" id="dengluchenggong">
+                            <p class="chenggong">登录成功!</p>
+                            <input type="button" value="确定" class="chick3" id="dengluqueding">
+                        </div>
+                    </div>
+                </div>
+                <div class="zhucebox" id="zhucejiemian">
+                    <div>
+                        <div class="top11">
+                            <img src="login/关闭.png" alt="" class="guanbibox" id="zhuceguanbi">
+                        </div>
+                        <div class="name1">
+                            <p class="name">用&nbsp;户&nbsp;名&nbsp;&nbsp;&nbsp;<input type="text" id="userName1" value="" class="arr1"></p>
+                            <p id="notes3" class="notes">&nbsp;</p>
+                            <p calss="space1">&nbsp;</p>
+                        </div>
+                        <div class="name1">
+                            <p class="name">设置密码&nbsp;&nbsp;&nbsp;<input type="text" id="passWord1" value="" class="arr1"></p>
+                            <p id="notes4" class="notes">&nbsp;</p>
+                            <p class="space2">&nbsp;</p>
+                        </div>
+                        <div>
+                            <input type="button" id="zhuce1" value="立即注册" class="arr2">
+                        </div>
+                        <div class="zhucechenggong" id="zhucechenggong">
+                            <p class="chenggong">注册成功!</p>
+                            <p id="finish1">&nbsp;sss</p>
+                            <p id="finish2">&nbsp;sss</p>
+                            <input type="button" value="确定" class="chick4" id="zhucequeding">
+                        </div>
+                    </div>
+                </div>
+                <div class="pinglunqu" id="pinglunqu">
+                    <div class="geti">
+                        <div class="yonghuqu">
+                            <img src="login/头像.png" alt="" class="yonghutouxiang">
+                            <p class="yonghuming">不知名用户</p>
+                        </div>
+                        <div class="dafenqu">
+                            <img src="login/star2.png" alt="">
+                            <img src="login/star2.png" alt="">
+                            <img src="login/star2.png" alt="">
+                            <img src="login/star2.png" alt="">
+                            <img src="login/star2.png" alt="">
+                        </div>
+                        <div class="pinglunneirong">
+                            <p>不错！挺好玩！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="top" class="up" onclick="goTop()" ><img src="login/logo.png" class="fanhui">回到顶部</div>
+</body>
+<script>
+    var dao = document.getElementById("dao");
+    var kaishibtn = document.getElementById("kaishibtn");
+    var game1 = document.getElementById("game1");
+    var game2 = document.getElementById("game2");
+    kaishibtn.onclick = function(){
+        var n = 3;
+        game1.style.display = "none";
+        game2.style.display = "block";
+        var timeId = setInterval(function(){
+            n=n-1;
+           if(n==2){
+               dao.src = "login/2.png";
+           }
+           if(n==1){
+               dao.src = "login/1.png";
+           }
+           if(n==0){
+               dao.src = "login/go.png";
+           }
+           if(n==-1){
+               n=4;
+               game2.style.display = "none";
+               game1.style.display = "block";
+           }
+        },1000)
+    }
+
+    var denglu = document.getElementById("denglu");
+    var zhuce = document.getElementById("zhuce");
+    denglu.onclick = function(){
+        denglujiemian.style.display = "block";
+    }
+    zhuce.onclick = function(){
+        zhucejiemian.style.display = "block";
+    }
+
+    var dengluqueding = document.getElementById("dengluqueding");
+    var denglujiemian = document.getElementById("denglujiemian");
+    var zhucejiemian = document.getElementById("zhucejiemian");
+    var zhucequeding = document.getElementById("zhucequeding");
+    var zhucechenggong = document.getElementById("zhucechenggong");
+    var dengluchenggong = document.getElementById("dengluchenggong");
+    var denglu1 = document.getElementById("denglu1");
+    denglu1.onclick = function(){
+        dengluchenggong.style.display = "block";
+    }
+    zhucequeding.onclick = function(){
+        zhucejiemian.style.display = "none";
+    }
+    dengluqueding.onclick = function(){
+        denglujiemian.style.display = "none";
+    }
+
+    var zhuceguanbi = document.getElementById("zhuceguanbi");
+    var dengluguanbi = document.getElementById("dengluguanbi");
+    dengluguanbi.onclick = function(){
+        denglujiemian.style.display = "none";
+    }
+    zhuceguanbi.onclick = function(){
+        zhucejiemian.style.display = "none";
+    }
+
+    var userName = document.getElementById("userName");
+    var passWord = document.getElementById("passWord");
+    var notes1 = document.getElementById("notes1");
+    var notes2 = document.getElementById("notes2");
+    var chick1 = document.getElementById("chick2");
+    userName.onclick = function(){
+        var str = "支持中文数字";
+        notes1.innerText = str;
+    }
+    userName.onblur = function(){
+        if(userName.value==null){
+            var str = "用户名不能为空";
+            notes1.innerText = str;
+        }
+        else{
+            var str = "";
+            notes1.innerText = str;
+        }
+    }
+    passWord.onclick = function(){
+        var str = "建议使用两种字符组合";
+        notes2.innerText = str;
+    }
+    passWord.onblur = function(){
+
+        if(passWord.value == null){
+            var str = "密码不能为空";
+            notes2.innerText = str;
+        }
+        else{
+            var str = "";
+            notes2.innerText = str;
+        }
+    }
+    var userName1 = document.getElementById("userName1");
+    var passWord1 = document.getElementById("passWord1");
+    var notes3 = document.getElementById("notes3");
+    var notes4 = document.getElementById("notes4");
+    var zhuce1 = document.getElementById("zhuce1");
+    var finish1 = document.getElementById("finish1");
+    var finish2 = document.getElementById("finish2");
+    var zhucechenggong = document.getElementById("zhucechenggong");
+    userName1.onclick = function(){
+        var str = "支持中文数字";
+        notes3.innerText = str;
+    }
+    userName1.onblur = function(){
+        if(userName1.value==null){
+            var str = "用户名不能为空";
+            notes3.innerText = str;
+        }
+        else{
+            var str = "";
+            notes3.innerText = str;
+        }
+    }
+    passWord1.onclick = function(){
+        var str = "建议使用两种字符组合";
+        notes4.innerText = str;
+    }
+    passWord1.onblur = function(){
+
+        if(passWord1.value == null){
+            var str = "密码不能为空";
+            notes4.innerText = str;
+        }
+        else{
+            var str = "";
+            notes4.innerText = str;
+        }
+    }
+    zhuce1.onclick = function(){
+        if(userName1.value!=null||passWord1.value!=null){
+            zhucechenggong.style.display = "block";
+            var str1 = "用户名：";
+            var str2 = "密码：";
+            finish1.innerText = str1+userName1.value;
+            finish2.innerText = str2+passWord1.value;
+        }
+    }
+
+    var kaishibtn = document.getElementById("kaishibtn")
+    kaishibtn.onmousemove = function(){
+        kaishibtn.src = "login/开始2.png";
+    }
+    kaishibtn.onmouseout = function(){
+        kaishibtn.src = "login/开始.png";
+    }
+
+    function goTop(){
+        var odiv = document.getElementById("top");
+        document.documentElement.scrollTop = document.body.scrollTop = 0;
+    }
+
+    window.onscroll = function(){
+        var odiv = document.getElementById("top");
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if(scrollTop > 800){	
+            odiv.style.display = "block";
+        } else {
+            odiv.style.display = "none"
+        }
+    }
+    var pic = document.getElementById("pic");
+    var picList = pic.getElementsByTagName("img");
+    var txt = document.getElementById("txt");
+    var comments = ["差", "一般", "中等", "还行", "好"];
+    var flag = true;
+
+    for(var i = 0; i < picList.length; i++) {
+        picList[i].onmouseover = function() {
+            if(!flag) {
+                return;
+            }
+        var index = this.getAttribute("title");
+        var imgSrc = "";
+        if(index <= 2) {
+            imgSrc = "login/star1.png";
+        }
+        else {
+            imgSrc = "login/star2.png";
+        }            
+        for(var j = 0; j < index; j++) {
+            picList[j].src = imgSrc;
+        }
+        txt.innerHTML = comments[index - 1];
+    }
+        picList[i].onmouseout = function() {
+            if(!flag) {
+                return;
+            }
+            for(var j = 0; j < picList.length; j++) {
+                picList[j].src = "login/star0.png";
+            }
+            txt.innerHTML = "";
+        }
+        picList[i].onclick = function() {
+            flag = !flag;
+        }
+    }
+
+    var pingjiabtn = document.getElementById("pingjiabtn");
+    var pingjia = document.getElementById("pingjia");
+    var pinglunqu = document.getElementById("pinglunqu");
+    pingjiabtn.onclick = function(){
+        var str1 = pingjia.value;
+        var str2 = "<div class='geti'><div class='yonghuqu'><img src='login/头像.png' alt='' class='yonghutouxiang'><p class='yonghuming'>不知名用户</p></div><div class='dafenqu'><img src="+picList[0].src+" alt=''><img src="+picList[1].src+" alt=''><img src="+picList[2].src+" alt=''><img src="+picList[3].src+" alt=''><img src="+picList[4].src+" alt=''></div><div class='pinglunneirong'><p>"+str1+"</p></div></div>"
+        pinglunqu.innerHTML = pinglunqu.innerHTML+str2;
+    }
+</script>
+</html>
